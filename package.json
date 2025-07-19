@@ -1,0 +1,47 @@
+{
+  "name": "voetbaltoernooi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greetzkenny/toernooimanager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greetzkenny/toernooimanager/issues"
+  },
+  "homepage": "https://github.com/greetzkenny/toernooimanager#readme",
+  "description": "",
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.10.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.2.0",
+    "@mui/material": "^7.2.0",
+    "@prisma/client": "^6.12.0",
+    "@types/bcrypt": "^6.0.0",
+    "@types/node": "^24.0.15",
+    "@types/react": "^19.1.8",
+    "autoprefixer": "^10.4.21",
+    "bcrypt": "^6.0.0",
+    "mongodb": "^6.17.0",
+    "next": "^15.4.2",
+    "next-auth": "^4.24.11",
+    "next-themes": "^0.4.6",
+    "pg": "^8.16.3",
+    "postcss": "^8.5.6",
+    "prisma": "^6.12.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.8.3"
+  }
+}
