@@ -59,25 +59,6 @@ export default function Home() {
               <p className="text-white/80">Track match results, standings, and tournament progress in real-time.</p>
             </div>
           </div>
-
-          {/* Theme Toggle */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-            <h3 className="text-white font-semibold mb-4">Choose Your Theme</h3>
-            <div className="flex gap-4 justify-center">
-              <button 
-                onClick={() => setTheme("light")} 
-                className="bg-white text-green-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg"
-              >
-                ☀️ Light Mode
-              </button>
-              <button 
-                onClick={() => setTheme("dark")} 
-                className="bg-gray-800 text-white hover:bg-gray-700 px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg"
-              >
-                🌙 Dark Mode
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </main>

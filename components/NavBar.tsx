@@ -3,10 +3,16 @@
 import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
 import { useState } from "react";
+import { useTheme } from "next-themes";
 
 export default function NavBar() {
   const { data: session } = useSession();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
   return (
     <nav className="bg-gradient-to-r from-green-600 to-green-700 dark:from-gray-800 dark:to-gray-900 shadow-lg border-b border-green-500/20">
@@ -85,11 +91,33 @@ export default function NavBar() {
                   </Link>
                 </>
               )}
+
+              {/* Theme Toggle Button */}
+              <button
+                onClick={toggleTheme}
+                className="text-white hover:bg-green-500 hover:bg-opacity-75 p-2 rounded-md transition-all duration-200 flex items-center justify-center"
+                aria-label="Toggle theme"
+              >
+                <span className="text-lg transform transition-transform duration-200">
+                  {theme === "dark" ? "☀️" : "🌙"}
+                </span>
+              </button>
             </div>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            {/* Theme Toggle Button for Mobile */}
+            <button
+              onClick={toggleTheme}
+              className="text-white hover:bg-green-500 hover:bg-opacity-75 p-2 rounded-md transition-all duration-200"
+              aria-label="Toggle theme"
+            >
+              <span className="text-lg transform transition-transform duration-200">
+                {theme === "dark" ? "☀️" : "🌙"}
+              </span>
+            </button>
+
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white hover:bg-green-500 hover:bg-opacity-75 p-2 rounded-md transition-all duration-200"
