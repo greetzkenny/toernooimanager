@@ -32,7 +32,7 @@ export default function SignUp() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-400 via-green-500 to-green-600 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         {/* Logo and Header */}
         <div className="text-center mb-8">
@@ -66,7 +66,7 @@ export default function SignUp() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors duration-200"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors duration-200"
                 required
               />
             </div>
@@ -81,7 +81,7 @@ export default function SignUp() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Create a password"
-                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors duration-200"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors duration-200"
                 required
               />
             </div>
@@ -94,7 +94,7 @@ export default function SignUp() {
                 id="role"
                 value={role}
                 onChange={(e) => setRole(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors duration-200"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors duration-200"
               >
                 <option value="USER">User - Apply to tournaments</option>
                 <option value="ADMIN">Admin - Create and manage tournaments</option>
@@ -104,7 +104,7 @@ export default function SignUp() {
             <button 
               type="submit" 
               disabled={loading}
-              className="w-full bg-green-600 hover:bg-green-700 disabled:bg-green-400 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center"
+              className="w-full bg-emerald-600 hover:bg-emerald-700 disabled:bg-emerald-400 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center"
             >
               {loading ? (
                 <>
@@ -123,7 +123,7 @@ export default function SignUp() {
               Already have an account?{" "}
               <Link 
                 href="/auth/signin" 
-                className="text-green-600 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300 font-medium transition-colors duration-200"
+                className="text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300 font-medium transition-colors duration-200"
               >
                 Sign in here
               </Link>

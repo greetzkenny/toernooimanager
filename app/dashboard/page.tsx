@@ -11,7 +11,7 @@ export default function Dashboard() {
     return (
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-600 mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-600 mx-auto mb-4"></div>
           <p className="text-gray-600 dark:text-gray-400">Loading...</p>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function Dashboard() {
             {/* Admin Dashboard Cards */}
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900 rounded-lg flex items-center justify-center mr-4">
                   <span className="text-2xl">🏆</span>
                 </div>
                 <div>
@@ -51,7 +51,7 @@ export default function Dashboard() {
               </div>
               <Link 
                 href="/admin/tournaments/new" 
-                className="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-3 px-4 rounded-lg font-medium transition-colors duration-200"
+                className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white text-center py-3 px-4 rounded-lg font-medium transition-colors duration-200"
               >
                 Create New Tournament
               </Link>
@@ -98,7 +98,7 @@ export default function Dashboard() {
             {/* User Dashboard Cards */}
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900 rounded-lg flex items-center justify-center mr-4">
                   <span className="text-2xl">🏆</span>
                 </div>
                 <div>
@@ -108,7 +108,7 @@ export default function Dashboard() {
               </div>
               <Link 
                 href="/tournaments" 
-                className="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-3 px-4 rounded-lg font-medium transition-colors duration-200"
+                className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white text-center py-3 px-4 rounded-lg font-medium transition-colors duration-200"
               >
                 Browse Tournaments
               </Link>
@@ -157,7 +157,7 @@ export default function Dashboard() {
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Quick Overview</h2>
           <div className="grid md:grid-cols-4 gap-6">
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 border border-gray-200 dark:border-gray-700">
-              <div className="text-3xl font-bold text-green-600">0</div>
+              <div className="text-3xl font-bold text-emerald-600">0</div>
               <div className="text-gray-600 dark:text-gray-400">Active Tournaments</div>
             </div>
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 border border-gray-200 dark:border-gray-700">
