@@ -7,7 +7,7 @@ export default function Home() {
   const { setTheme } = useTheme();
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-green-400 via-green-500 to-green-600 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700">
+    <main className="min-h-screen bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700">
       <div className="flex min-h-screen flex-col items-center justify-center p-8">
         <div className="text-center max-w-4xl mx-auto">
           {/* Hero Section */}
@@ -28,13 +28,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Link 
                 href="/tournaments" 
-                className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg transition-all duration-300 transform hover:scale-105"
+                className="bg-white text-emerald-700 hover:bg-gray-50 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg transition-all duration-300 transform hover:scale-105"
               >
                 Browse Tournaments
               </Link>
               <Link 
                 href="/auth/signup" 
-                className="bg-green-700 hover:bg-green-800 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg transition-all duration-300 transform hover:scale-105"
+                className="bg-emerald-800 hover:bg-emerald-900 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg transition-all duration-300 transform hover:scale-105"
               >
                 Get Started
               </Link>

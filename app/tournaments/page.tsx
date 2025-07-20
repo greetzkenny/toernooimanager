@@ -47,7 +47,7 @@ export default function Tournaments() {
     return (
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-600 mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-600 mx-auto mb-4"></div>
           <p className="text-gray-600 dark:text-gray-400">Loading tournaments...</p>
         </div>
       </div>
@@ -88,9 +88,9 @@ export default function Tournaments() {
                 className="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
                 {/* Tournament Header */}
-                <div className="bg-gradient-to-r from-green-600 to-green-700 dark:from-gray-700 dark:to-gray-600 p-6">
+                <div className="bg-gradient-to-r from-emerald-700 to-emerald-800 dark:from-gray-700 dark:to-gray-600 p-6">
                   <Link href={`/tournaments/${tournament.id}`}>
-                    <h2 className="text-xl font-bold text-white mb-2 hover:text-green-100 transition-colors duration-200">
+                    <h2 className="text-xl font-bold text-white mb-2 hover:text-emerald-100 transition-colors duration-200">
                       {tournament.name}
                     </h2>
                   </Link>
@@ -127,7 +127,7 @@ export default function Tournaments() {
                   <div className="flex gap-3">
                     <Link 
                       href={`/tournaments/${tournament.id}`}
-                      className="flex-1 bg-green-600 hover:bg-green-700 text-white text-center py-2 px-4 rounded-lg font-medium transition-colors duration-200"
+                      className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white text-center py-2 px-4 rounded-lg font-medium transition-colors duration-200"
                     >
                       View Details
                     </Link>
@@ -158,7 +158,7 @@ export default function Tournaments() {
               </p>
               <Link 
                 href="/admin/tournaments/new"
-                className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center"
               >
                 <span className="mr-2">🏆</span>
                 Create Tournament
