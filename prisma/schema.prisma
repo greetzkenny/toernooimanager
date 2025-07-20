@@ -6,7 +6,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -73,6 +72,7 @@ model Match {
   winnerId      String?
   date          DateTime?
   duration      Int       // in minutes
+  stage         Stage     @default(GROUP)
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 }

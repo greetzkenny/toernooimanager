@@ -1,16 +1,17 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from "next/server";
 import prisma from '../../../../lib/prisma';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../../auth/[...nextauth]/route';
+import { authOptions } from "@/lib/auth";
 
-export async function PUT(request: Request, { params }: { params: { matchId: string } }) {
+export async function PUT(request: NextRequest, context: { params: Promise<{ matchId: string }> }) {
+  const params = await context.params;
+  const matchId = params.matchId;
   const session = await getServerSession(authOptions);
   if (!session || session.user.role !== 'ADMIN') {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
   const { team1Score, team2Score } = await request.json();
-  const matchId = params.matchId;
 
   try {
     const match = await prisma.match.update({
@@ -47,7 +48,7 @@ export async function PUT(request: Request, { params }: { params: { matchId: str
       data: { winnerId }
     });
     return NextResponse.json(match);
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Error updating match' }, { status: 500 });
   }
 } 
