@@ -26,7 +26,8 @@ export default function SignUp() {
     if (res.ok) {
       router.push("/auth/signin");
     } else {
-      setError("Error creating account. Please try again.");
+      const errorData = await res.json();
+      setError(errorData.error || "Error creating account. Please try again.");
     }
     setLoading(false);
   };
