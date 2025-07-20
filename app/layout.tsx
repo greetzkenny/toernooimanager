@@ -16,8 +16,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <Providers>
-          <NavBar />
           <ThemeWrapper>
+            <NavBar />
             {children}
           </ThemeWrapper>
         </Providers>
